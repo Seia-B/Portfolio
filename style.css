@@ -1,0 +1,257 @@
+/* GENERAL STYLING */
+/* BODY */
+body {
+    margin: 0;
+}
+ /* HEADING 1 ELEMENTS */
+ h1 {
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: rgb(5, 0, 8);
+    font-size: 25px;
+ }
+
+/* HEADING 1 ELEMENT HOVER */
+h1:hover {
+    filter: grayscale(10%);
+    transform: scale(1.1);
+    transition: transform 2s;
+}
+
+/* STYLING OF PORTFOLIO TITLE TEXT */
+.white-text {
+    color: #fff;
+}
+ 
+/* PARAGRAPH ELEMENTS */
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* PARAGRAPH ELEMENTS HOVER */
+p:hover {
+    transition: transform 1s;
+    transform: scale(1.01);
+}
+
+/* CLASS CENTER, CENTERS ALL ELEMENTS */
+.center {
+    text-align: center;
+}
+
+.center:hover {
+    transition: transform 2s;
+    transform: scale(1.1);
+}
+
+/* ANCHOR ELEMENTS */
+a {
+    color: blue;
+}
+
+/* QUOTATION ELEMENTS */
+q {
+    font-style: italic;
+}
+
+/* IMAGE ELEMENTS */
+img {
+    filter: grayscale(50%);
+    border-radius: 10px;
+    max-width: 100%;
+    height: 340px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* IMAGE ELEMENTS HOVER */
+img:hover {
+    filter: grayscale(5%);
+    transition: transform 1s;
+    transform: scale(1.1);
+}
+
+/* MEDIA RULE */
+@media screen and (max-width: 576px) {
+    img {
+        height: 100px;
+        margin-top: 150px;
+    }
+}
+
+/* STYLING FOOTER */
+footer {
+    padding: 3%;
+    background-color: rgb(212, 173, 249);
+}
+
+/* END OF GENERAL STYLING */
+
+/* NAVBAR STYLING */
+.navbar {
+    overflow: hidden;
+    background-color:rgb(212, 173, 249);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    -webkit-animation: moveNav 5s;
+    animation: moveNav 5s;
+}
+
+@keyframes moveNav {
+    from {left: -100vw;}
+    to {left: 0vw;}
+}
+
+/* NAVBAR LINKS */
+.navbar a {
+    float: right;
+    display: block;
+    color:black;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    -webkit-animation: moveNavText 5.75s;
+    animation: moveNavText 5.75s;
+}
+/* MOVENAVTEXT ANIMATION */
+@keyframes moveNavText {
+    from {top: -100vw;}
+    to {top: 0vw;}
+}
+
+/* MEDIA ELEMENTS */
+@media screen and (max-width:576px) {
+    .navbar a {
+        width: 25%;
+        font-size: 14px;
+    }
+}
+/* NAVBAR HOVER EFFECTS */
+.navbar a:hover {
+    background-color: #fff;
+    color: rgb(173, 229, 244);
+    font-weight: bold;
+}
+/* NAVBAR HOME BUTTON */
+.navbar a.active {
+    background-color: blueviolet;
+}
+/* END NAVBAR STYLING */
+
+/* VIDEO STYLING SECTION */
+#Eye_video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    z-index: -1;
+}
+/* MEDIA VIDEO STYLING */
+@media screen and (max-width: 576px) {
+    #Eye_video {
+        display: none;
+    }
+}
+
+/* TEXT OVER THE VIDEO */
+.Video_Text {
+    background: rgba(155, 153, 155, 0.5);
+    color: #a40291;
+    width: 100%;
+    padding: 20%;
+    position: relative;
+    -webkit-animation: moveVideoText 5.75s;
+    animation: moveVideoText 5.75s;
+}
+
+@keyframes moveVideoText {
+    from {top: -100vw;}
+    to {top: 0vw;}
+}
+
+/* END OF VIDEO STYLING */
+/* TABLE STYLING */
+* {
+    box-sizing: border-box;
+}
+
+.Column_1 {
+    float: left;
+    width: 50%;
+    padding: 10%;
+    padding-top: 3%;
+    height: 400px;
+    background-color: rgb(228, 178, 241);
+}
+
+/* MEDIA STYLING */
+@media screen and (max-width: 576px) {
+    .Column_1 {
+        overflow: auto;
+    }
+}
+
+.Column_2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 1.9%;
+    height: 400px;
+    background-color: rgb(59, 29, 59);
+}
+
+.Column_Tall {
+    padding-top: 3.5%;
+    height: 450px;
+}
+
+.Row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* END OF TABLE STYLING */
+/* CONTACT FORM STYLING */
+
+input[type=text] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #f9b8f2;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    resize: vertical;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* INPUT BOXES HOVER EFFFECT */
+input[type=text]:hover {
+    background-color: #fdfafd;
+    color: black;
+    transform: scale(1.1);
+    transition: transform 1.5s;
+}
+/* FORM ELEMENT */
+form {
+    border-radius: 5px;
+    background-color: #f9f6f8;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+
+
